@@ -287,6 +287,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: 1px solid var(--color-Grey-light-2);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overview__heading {
+  font-size: 2.25rem;
+  margin-right: 2rem;
+  padding: 1.5rem 3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
 .overview__stars {
@@ -297,6 +309,81 @@ body {
   width: 1.75rem;
   height: 1.75rem;
   fill: var(--color-primary);
+}
+
+.overview__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overview__icon-location {
+  margin-right: 1.5rem;
+}
+
+.overview__rating {
+  margin-left: 2rem;
+  background-color: var(--color-primary);
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  color: var(--color-Grey-light-1);
+  text-align: center;
+}
+
+.overview__rating-count {
+  font-size: 1.2rem;
+}
+
+.btn-inline {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  -webkit-animation-name: pulsing;
+          animation-name: pulsing;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.btn-inline:hover {
+  color: var(--color-Grey-dark-1);
+  cursor: pointer;
+}
+
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .container {
@@ -327,7 +414,7 @@ body {
           align-items: center;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-Grey-light-2);
+  border-bottom: 1px solid var(--color-Grey-light-2);
   font-size: 1.4rem;
 }
 
