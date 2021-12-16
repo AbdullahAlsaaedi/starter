@@ -64,9 +64,110 @@
       </header>
 
       <div class="content">
-        <nav class="sidebar">side bar</nav>
+        <nav class="sidebar">
+          <nav class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                  <span>Hotel</span>
+                </svg>
+              </a>
+            </li>
 
-        <main class="hotel-view">hotel view</main>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                  <span>Flight</span>
+                </svg>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                  <span>Car rental</span>
+                </svg>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                  <span>Tours</span>
+                </svg>
+              </a>
+            </li>
+          </nav>
+
+          <div class="legal">
+            &copy; 2021 by Trillo, all rights reserved.
+          </div>
+          
+        </nav>
+
+        <main class="hotel-view">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img src="img/hotel-1.jpg" class="gallery__photo"> 
+            </figure>
+
+            <figure class="gallery__item">
+              <img src="img/hotel-2.jpg" class="gallery__photo"> 
+            </figure>
+
+            <figure class="gallery__item">
+              <img src="img/hotel-3.jpg" class="gallery__photo"> 
+            </figure>
+          </div>
+
+          <div class="overview" >
+            <h1 class="overview__heading">
+              Hotel Las Palmas
+            </h1>
+
+            <div class="overview__stars">
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              
+            </div>
+
+            <div class="overview__location">
+              <svg class="overview__icon-location">
+                <use xlink:href="img/sprite.svg#icon-map"></use>
+              </svg>
+              <button class="btn-inline">Jeddah, SA</button>
+            </div>
+
+            <div class="overview__rating">
+              <div class="overview__rating-average">8.6</div>
+              <div class="overview__rating-count">200</div>
+
+            </div>
+            
+          </div>
+        </main>
+        
       </div>
     </div>
   </body>
