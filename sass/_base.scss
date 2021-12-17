@@ -47,23 +47,32 @@ Grey dark 3: #999
   --color-Grey-dark-3: #999;
 
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --line: 1px solid var(--color-Grey-light-2);
 }
+
+$bp-largest: 72.75em;
+$bp-large: 63em;
+$bp-medium: 51em;
+$bp-small: 36.5em;
+$bp-smallest: 32.7em;
+$bp-ultrasmall: 30em;
+$bp-ultrasmall-2: 26.5em;
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+
+  @media screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+
+  @media screen and (max-width: $bp-ultrasmall-2) {
+    font-size: 32%;
+  }
 }
 
 body {
-  min-height: 100vh;
-
-  background-image: linear-gradient(
-    to right bottom,
-    var(--color-primary),
-    var(--color-primary-dark)
-  );
-  background-repeat: no-repeat;
-
   font-family: "IBM Plex Mono";
   color: var(--color-Grey-dark-2);
 }
